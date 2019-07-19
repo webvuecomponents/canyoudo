@@ -1,4 +1,4 @@
-## 图片轮播组件
+## 图片轮播组件  
 - 实现左右轮播 并且可以在左右添加新图片  
 1. 在 `<script></script>` 标签导入组件,并注册
 ```javascript
@@ -37,6 +37,12 @@
 |  curPos | 显示图片的位置  | Number  | --  | 0 |
 |  imgStyle | 图片的样式  | Object  | --  | { } |
 |  direction | 需要增加图片添加图片位置的标识  | Number  | -1，1  | -- |
+|  showDesc | 显示描述字段，不需要不传  | String  | --  | false |
+### Methods
+
+| 方法吗 |  说明  | 参数 |
+| :----:   | :----:  | :----:  |
+| posMove   | 移动图片  | Function (pos: number, ifSetInerPos: boolean) 第一个参数要移动到的位置 第一张为1，第二个参数， 内部使用，必填true|
 
 ### Events
 
