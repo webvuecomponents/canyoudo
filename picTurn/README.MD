@@ -2,7 +2,7 @@
 - 实现左右轮播 并且可以在左右添加新图片  
 1. 在 `<script></script>` 标签导入组件,并注册
 ```javascript
-    import picCon from 'components/remoteInspection/'
+    import picCon from 'components/picWrapper'
 
     export default {
         components: {
