@@ -1,5 +1,8 @@
 ## 图片轮播组件  
-- 实现左右轮播 并且可以在左右添加新图片  
+
+> 实现左右轮播 并且可以在左右添加新图片 自定义显示图片的位置
+
+
 1. 在 `<script></script>` 标签导入组件,并注册
 ```javascript
     import picCon from 'components/picWrapper'
