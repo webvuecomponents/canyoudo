@@ -13,3 +13,4 @@ import checkColorBox from "@/components/checkColorBox"
                    @changeColor="changeColor"></checkColorBox>
 ```
 >plateColor传递0-5
+>对号icon 需要依赖element-ui
