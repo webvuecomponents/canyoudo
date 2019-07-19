@@ -39,12 +39,13 @@
 |  direction | 需要增加图片添加图片位置的标识  | Number  | -1，1  | -- |
 |  showDesc | 显示描述字段，不需要不传  | String  | --  | false |
 ### Methods
-
+ 
 <style>
-table th:nth-of-type(2) {
-	width: 100px;
-}
+	table th:nth-of-type(2) {
+		width: 100px;
+	}
 </style>
+
 
 | 方法吗 |  说明  | 参数 |
 | :----:   | :----:  | :----:  |
