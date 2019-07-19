@@ -40,6 +40,12 @@
 |  showDesc | 显示描述字段，不需要不传  | String  | --  | false |
 ### Methods
 
+<style>
+table th:nth-of-type(2) {
+	width: 100px;
+}
+</style>
+
 | 方法吗 |  说明  | 参数 |
 | :----:   | :----:  | :----:  |
 | posMove   | 移动图片  | Function (pos: number, ifSetInerPos: boolean) 第一个参数要移动到的位置 第一张为1，第二个参数， 内部使用，必填true|
