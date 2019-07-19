@@ -12,3 +12,4 @@ import checkColorBox from "@/components/checkColorBox"
                    :plateColor="plateColor"
                    @changeColor="changeColor"></checkColorBox>
 ```
+>plateColor传递0-5
