@@ -1,4 +1,4 @@
-使用`npm install info-table --save` 安装 然后
+使用`npm install info-table --save` 然后
 可以全局注册
 ```javascript
 import Vue from 'vue';
@@ -14,6 +14,7 @@ export default {
     }
 }
 ```
+## 临时文档
 ```javascript
 // tableData 数据来源 num 列数 nameStyle： 名称的样式对象
 // valueStyle 对应值的样式对象
