@@ -17,8 +17,8 @@ import controlTime from '@/components/controlTime'
 
 ```
 ```javascript
-## 依赖  
-* 在index.html按照顺序引入 
+ 依赖  
+ 在index.html按照顺序引入 
   <link rel="stylesheet" href="/static/jquery.datetimepicker.min.css">
   <script src="/static/jquery.min.js"></script>
   <script src="/static/jquery-mousewheel.js"></script>
