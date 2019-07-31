@@ -7,7 +7,7 @@
 </template>
 
 <script>
-// http://bj-pre-image.oss-cn-beijing.aliyuncs.com/busy/20190621/870661c7a36baf2ead54e72815d7d987.jpg
+
 import list from './list'
 import bigImg from './bigImg'
 export default {
