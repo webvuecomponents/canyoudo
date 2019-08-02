@@ -5,8 +5,8 @@
                 <div class="grid-content bg-purple">
                     <h2>{{ dataText.plateNumber }}</h2>
                     <p>车牌颜色：{{ dataText.carColor }}</p>
-                    <p>停 车 楼：{{ dataText.terminalName }}</p>
-                    <p>上传时间：{{ dataText.tsStr }}</p>
+                    <p>停 车 区：{{ dataText.terminalName }}</p>
+                    <p>上传时间：{{ dataText.tsTime }}</p>
                     <p style="width: 100%;word-wrap:break-word;word-break:break-all;overflow: hidden;">
                         描　　述：{{ dataText.content }}
                     </p>
@@ -15,12 +15,12 @@
             <el-col :span="12">
                 <div class="grid-content bg-purple-light">
                     <div class="bigImg">
-                        <img :src="require('./image/'+ bigImg +'.jpg')" alt="">
+                        <img :src="bigImg" alt="">
                     </div>
                     <div class="minImg">
                         <div style="margin-right:5px;" :key="index" v-for="(item, index) in arrImage" 
                         :class="{act: index === nowIndex}" @click="changeImg(index)">
-                            <img :src="require('./image/'+ item.src +'.jpg')" aslt="">
+                            <img :src=" item.src " aslt="">
                         </div>
                     </div>
                 </div>
