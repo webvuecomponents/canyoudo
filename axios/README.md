@@ -9,7 +9,7 @@ import axios from './common/js/http.js'
 Vue.prototype.$axios = axios;
 ```
 
-## 在生产环境 xx.vue组建中使用
+## xx.vue组建中使用
 ```vue
 this.$axios.post('/acop/2.0/xx/xx/xx').then(res => {
    <!--  TODO: res 处理  -->
