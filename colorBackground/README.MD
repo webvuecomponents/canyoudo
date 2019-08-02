@@ -1,7 +1,8 @@
+背景颜色组件
+使用
+import plateColor from '@/components/plateBackgroundColor/plateColor'
 
-使用：
-1.父组件中引用
+// 例子
 <plateColor v-if="scope.row.plateNumber"
                             :plateCarNum="scope.row.plateNumber"
-                            :plateColorNum="scope.row.plateColor"></plateColor>
-
+                            :plateColorNum="scope.row.plateColor" />
