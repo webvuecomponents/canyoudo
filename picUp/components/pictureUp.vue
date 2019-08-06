@@ -8,6 +8,7 @@
 </template>
 
 <script>
+// Exif.js 提供了 JavaScript 读取图像的原始数据的功能扩展，例如：拍照方向、相机设备型号、拍摄时间、ISO 感光度、GPS 地理位置等数据。http://code.ciaoca.com/javascript/exif-js/
 import EXIF from 'exif-js';
 export default {
     name: 'pictureUp',
@@ -32,23 +33,25 @@ export default {
             let obj = e.target;
             this.readURL(obj);
         },
+        // base64 转换Blob
         dataURLtoBlob (dataurl) {
             var arr = dataurl.split(','), mime = arr[0].match(/:(.*?);/)[1],
                 bstr = atob(arr[1]), n = bstr.length, u8arr = new Uint8Array(n);
             while (n--) {
                 u8arr[n] = bstr.charCodeAt(n);
             }
-            return new Blob([u8arr], {type:mime});
+            return new Blob([u8arr], {type: mime});
         },
         upFile (file) {
             let form = this.$refs.form;
+            // FormData对象用以将数据编译成键值对，以便用XMLHttpRequest来发送数据
             let formData = new FormData(form);
             var blob = this.dataURLtoBlob(file);
             formData.append("image", blob, "image.png");
             /**
              * 
              * function ajax () {
-             *  
+             *  注意 Content-Type设置为 multipart/form-data
              *  this.$emit('picUp', 'http://1.png')
              * 
              * }
@@ -61,6 +64,7 @@ export default {
                 var reader = new FileReader();
                 var canvas = document.createElement('canvas');
                 var ctx = canvas.getContext('2d');
+                // 开始读取指定的Blob中的内容。一旦完成，result属性中将包含一个data: URL格式的字符串以表示所读取文件的内容。
                 reader.readAsDataURL(input.files[0]);
                 reader.onload = function (e) {
                     var img = new Image();

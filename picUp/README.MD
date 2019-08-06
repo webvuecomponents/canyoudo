@@ -1,6 +1,12 @@
-## 底部组件说明
+## 组件说明
  * 引入方法
-   > import 引入
+   import picUp from 'components/picUp.vue'
+
+    export default {
+        components: {
+            picUp
+        }
+    }
  * 用法
    > <picUp @picUp="picUp" @cleanImgUrl="cleanImgUrl"></picUp>
  * 操作
