@@ -26,6 +26,7 @@ npm run build --report
    > 示例：《slideVer :errMes="errMes" :bigImage="bigImage" :smallImage="smallImage" :topNum="topNum"></slideVer》
  * 操作
    > 在需要的页面引入--改变绑定值即可
+   > npm install stylus --save-dev
  * Methods
    >
     顶部间距  | 左边间距  | touchstart | touchmove | touchend
