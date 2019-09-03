@@ -2,14 +2,13 @@
  * 引入方法
    > import引入
  * 用法
-   > <Footer :idx='0'></Footer>
+   > 页面引入改变相应的值即可
+   
+   > 示例：《slideVer :errMes="errMes" :bigImage="bigImage" :smallImage="smallImage" :topNum="topNum"></slideVer》
  * 操作
-   > 在需要的页面引入--改变绑定值idx即可
- * 注意项
-   > 需要改变文字 / 图片的话需要在Footer组件页面更改
-   > 在相对应的页面引入后入：idx为0 则需要在Footer页面找到相对应的对象改变对应的跳转--路由名称
- * API
-   > name: 底部文字
-   > push: 跳转路由名
-   > icon: 点击时展示的图片
-   > iconselect: 点击其他后展示的图片
+   > 在需要的页面引入--改变绑定值即可
+ * Methods
+   >
+    顶部间距  | 左边间距  | touchstart | touchmove | touchend
+    ---- | ----- | ------ | ------ | ------ |
+    topNum  | leftNum | 开始滑动 | 连续滑动 | 滑动结束
