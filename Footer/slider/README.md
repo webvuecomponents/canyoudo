@@ -32,3 +32,5 @@ npm run build --report
     顶部间距  | 左边间距  | touchstart | touchmove | touchend
     ---- | ----- | ------ | ------ | ------ |
     topNum  | leftNum | 开始滑动 | 连续滑动 | 滑动结束
+ * Attention!!!
+   > topNum是需要处理的这个是后端返回的小图y轴坐标
